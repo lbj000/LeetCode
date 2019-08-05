@@ -23,14 +23,15 @@ class Solution:
         # lnd = ListNode(0)
         l = []
         for i in lists:
-            while i.next != None:
+            if i:
+                while i.next != None:
+                    l.append(i.val)
+                    i = i.next
                 l.append(i.val)
-                i = i.next
-            l.append(i.val)
         l.sort()
         for i in l:
             lnd.next = ListNode(i)
             lnd = lnd.next
         return(ln.next)
 
-参考别人代码，实现最后的返回
+参考别人代码，用两个变量指向同一个节点，实现最后的返回
