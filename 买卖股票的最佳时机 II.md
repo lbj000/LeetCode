@@ -25,3 +25,14 @@
 输出: 0  
 解释: 在这种情况下, 没有交易完成, 所以最大利润为 0。  
 
+class Solution:
+
+    def maxProfit(self, prices: List[int]) -> int:
+        c = 0
+        for i in range(1,len(prices)):
+            if prices[i-1] < prices[i] :
+                c += (prices[i] - prices[i-1])
+        return c
+        
+开始思路出错，参考后更改        
+
