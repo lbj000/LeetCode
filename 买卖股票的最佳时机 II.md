@@ -34,5 +34,5 @@ class Solution:
                 c += (prices[i] - prices[i-1])
         return c
         
-开始思路出错，参考后更改        
+开始思路出错，现在思路相当于买了立即卖参考后更改        
 
