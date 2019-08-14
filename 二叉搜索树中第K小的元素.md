@@ -5,17 +5,20 @@
 
 示例 1:
 
-输入: root = [3,1,4,null,2], k = 1
-   3
-  / \
- 1   4
-  \
-   2
+  输入: root = [3,1,4,null,2], k = 1  
+
+    3
+   / \
+  1   4
+   \
+    2
+   
 输出: 1  
 
 示例 2:
 
-输入: root = [5,3,6,2,4,null,null,1], k = 3
+输入: root = [5,3,6,2,4,null,null,1], k = 3  
+
        5
       / \
      3   6
@@ -23,6 +26,7 @@
    2   4
   /
  1
+ 
 输出: 3
 
 // Definition for a binary tree node.  
